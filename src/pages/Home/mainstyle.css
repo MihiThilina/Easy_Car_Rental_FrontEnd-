@@ -1,0 +1,268 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* header */
+.topbar{
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    background-color:rgb(65, 74, 78);
+    left: -10px;
+    top: -10px;
+}
+
+.main-nav-link{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    left: 10px;
+    top: 20px;
+}
+
+.main-nav-link li{
+    font-family: 'Rasa', serif;
+    list-style: none;
+    margin: 0 35px;
+   
+}
+
+.main-nav-link li a{
+    position: relative;
+    right: 25px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    margin: 40px;
+    letter-spacing: 1px;
+    
+}
+
+.main-nav-link button{
+   border: none;
+   font-size: 22px;
+   font-family: 'Rasa', serif;
+   width: 110px;
+   height: 35px;
+   position: relative;
+   left: 250px;
+   top: -3px;
+}
+
+.hero_section{
+    background-color: #C0DDE8;
+    width: 100%;
+    height: 70vh;
+  
+}
+
+.hero_section img{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 150px;
+}
+
+.hero_section h2{
+    position: absolute;
+    top: 30%;
+    font-size: 400%;
+    left: 10%;
+}
+
+.hero_section h6{
+    position: absolute;
+    top: 54%;
+    font-size: 120%;
+    left: 10%;  
+}
+
+/* ========================================================= */
+
+.about-Section{
+    width: 100%;
+    height: 90vh;
+}
+
+.about-Section h2{
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+}
+.about-Section img{
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.about-Section h1{
+   width: 200px;
+   text-align: center;
+   align-items: center;
+   position: relative;
+   left: 70px;
+   top: -26px;
+
+}
+
+.about-Section p{
+    text-align: center;
+    width: 90%;
+    position: relative;
+    left: 20px;
+    top: -10px;
+}
+
+.about-Section div{
+    display:flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+
+
+/* Cars & Rental rates */
+
+.car_selection{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 150vh;   */
+  position: relative;
+  top: 90px;
+}
+
+.Cars_rates_Section{
+    height: 100vh;
+}
+
+.Cars_rates_Section dfn{
+font-style: normal;
+}
+.car_selection img{
+    width:292px;
+    position: relative;
+    
+    top: -150px;
+    left: 55px;
+}
+
+.car_selection div p{
+    position: relative;
+    right:240px;
+    
+    top: 70px;
+    font-size: large;
+}
+.car_selection div h4{
+    position: relative;
+    
+    right:240px;
+    top: 85px;
+    width: 120px;
+    font-size: large;
+}
+
+
+.Cars_rates_Section h2{
+     font-size: 300%;
+     font-weight: 500;
+     position: relative;
+     top: 5%;
+
+     text-align: center;
+}
+
+
+
+.nav-link li {
+    font-family: 'Rasa', serif;
+    list-style: none;
+    margin: 15px 15px; 
+}
+
+.nav-link li img{
+    width: 20px;
+    position: relative;
+    top: 4px;
+    left: -17px;
+}
+
+.nav-link li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 14px;
+    right: 240px;
+    top: 70px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link button {
+    border:none;
+    background-color: rgb(165, 255, 162);
+    width: 120%;
+    height: 40px;
+    border-radius: 5%;
+    position: relative;
+    top: 10px;
+    left: 160px;
+    font-size: larger;
+}
+
+.carPrice{
+   color: red;
+   position: relative;
+   left: -90px;
+   width: 140%;
+}
+
+.contact_section h1{
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font: 1em sans-serif;
+    font-size: 30px;
+    font-style: oblique;
+}
+
+.contact_section img{
+    height: 50px;
+    font-style: oblique;
+    top: 10px;
+    position: relative;
+}
+
+/* ========================================================== */
+
+.contact_section{
+    width: 100%;
+    height: 25vh;
+    background-image: linear-gradient(to right top, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8, #c0dde8);
+}
+
+/* ========================================================== */
+
+footer{
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+}
+
+footer h1{
+    text-align: center;
+    position: relative;
+    top: 40px;
+    font: 1em sans-serif;
+    font-size: 20px;
+    color:white;
+}
