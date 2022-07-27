@@ -9,6 +9,4 @@ export default styled.div`
   border-top:5px solid #C0DDE8;
   border-left:1px solid #C0DDE8;
   margin: 0 15px;
- 
-
 `;

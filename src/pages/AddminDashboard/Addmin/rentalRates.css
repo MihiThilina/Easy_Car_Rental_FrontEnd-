@@ -1,0 +1,63 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.RatesfristDiv{
+    position: relative;
+    height: 35vh;
+ 
+    width: 100%;
+    border: 1px solid rgba(0, 89, 255, 0.423);
+    
+ }
+ 
+ .RatestextFildSection{
+     position: relative;
+     border:5px solid rgba(255, 0, 111, 0.423);
+     width: 100%;
+     height: 35vh;
+ }
+  
+ .RatesecondDiv{
+     height: 44vh;
+     position: relative;
+     top: 20px;
+ }
+
+ 
+.Rentfirstflied{
+    display: flex;
+    margin: 20px;
+    position: relative;
+    top: 8px;
+}
+
+.RatesSaveBTN{
+    width: 20%;
+    height: 14%;
+    position: absolute;
+    right: 30px;
+    top: 200px;
+    background-color: rgb(34, 180, 1);
+    font-size:large;
+    border: none;
+    color: white;
+}
+
+.RatesUpdatebTN{
+    height: 14%;
+    width: 20%;
+    position: absolute;
+    right: 24%;
+    top: 200px;
+    background-color: rgb(40, 149, 227);
+    font-size:large;
+    border: none;
+    color: white;
+}
+ 

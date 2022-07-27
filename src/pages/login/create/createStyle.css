@@ -9,7 +9,7 @@
 }
 
 
-.login_Page{
+.signup_Page{
     background-color: #C0DDE8;
     width: 100vw;
     height: 100%;
@@ -30,7 +30,7 @@
 
 
 
-.first_slider{
+.signup_Page_first_slider{
     border-left: 1px solid rgb(0, 0, 0);
     border-top: 1px solid rgb(0, 0, 0);
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -42,7 +42,7 @@
     top: 6vh;
 }
 
-.second-slider{
+.signup_Page_second-slider{
     border-right: 1px solid rgb(0, 0, 0);
     border-top: 1px solid rgb(0, 0, 0);
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -54,7 +54,7 @@
     top: 6vh;
 }
 
-.second-slider h1{
+.signup_Page_second-slider h1{
     text-align: center;
     position: relative;
     top: 40px;
@@ -73,18 +73,18 @@
     top: 108px;
 }
 
-.vertical-center{
+.signup_Page_vertical-center{
     text-align: center;
     position: relative;
     bottom: -73vh;
 }
 
-.vertical-center button{
+.signupBTN{
     width: 30vw;
     height: 6vh;
     font-size: large;
     color: white;
-    border: none;
+    border: none; 
     border-radius: 10px;
     background-color: #6dd1ff;
 }

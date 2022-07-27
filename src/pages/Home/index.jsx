@@ -18,6 +18,7 @@ import carImg from '../../assest/img/toyota.png';
 import as001 from '../../assest/img/as001.jpg';
 import as002 from '../../assest/img/as002.jpg';
 import as003 from '../../assest/img/as003.jpg';
+import { Link } from 'react-router-dom';
 
 import Item from "./Item";
 import { styleSheet } from "./style";
@@ -63,7 +64,7 @@ class HomePage extends Component{
                                     <li><a href="#Home" class="underline"><span>Home</span></a></li>
                                     <li><a href="#Community" class="underline"><span>Contact</span></a></li>
                                     <li><a href="#Cars" class="underline"><span>Cars</span></a></li>
-                                    <button>Login</button>
+                                    <button><Link to="/LoginPage">Login</Link></button>
                                 </ul>
                             </nav>
                         

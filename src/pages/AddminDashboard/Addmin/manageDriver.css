@@ -1,0 +1,63 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.DriverfristDiv{
+    position: relative;
+    height: 35vh;
+ 
+    width: 100%;
+    border: 1px solid rgba(0, 89, 255, 0.423);
+    
+ }
+ 
+ .DrivertextFildSection{
+     position: relative;
+     border:5px solid rgba(255, 0, 111, 0.423);
+     width: 100%;
+     height: 35vh;
+ }
+  
+ .RatesecondDiv{
+     height: 44vh;
+     position: relative;
+     top: 20px;
+ }
+
+ 
+.Driverfirstflied{
+    display: flex;
+    margin: 20px;
+    position: relative;
+    top: 8px;
+}
+
+.DriverSaveBTN{
+    width: 20%;
+    height: 14%;
+    position: absolute;
+    right: 30px;
+    top: 180px;
+    background-color: rgb(34, 180, 1);
+    font-size:large;
+    border: none;
+    color: white;
+}
+
+.DriverUpdatebTN{
+    height: 14%;
+    width: 20%;
+    position: absolute;
+    right: 24%;
+    top: 180px;
+    background-color: rgb(40, 149, 227);
+    font-size:large;
+    border: none;
+    color: white;
+}
+ 

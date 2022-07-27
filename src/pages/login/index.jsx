@@ -5,6 +5,7 @@ import InputLabel from '@mui/material/InputLabel';
 import FormHelperText from '@mui/material/FormHelperText';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import './style.css';
 
 
@@ -62,8 +63,8 @@ export default function  LoginPage(){
                
 
                  <div class="vertical-center">
-                     <button>Login</button>
-                     <p>Don't have an account ?<a href="">Sign up</a></p>
+                     <button><Link to="/Booking">Login</Link> </button>
+                     <p>Don't have an account ?<a href=""><Link to="/CreateAccountPage">Sign up</Link></a></p>
                  </div>
 
                 </div>

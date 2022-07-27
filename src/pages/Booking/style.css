@@ -1,0 +1,205 @@
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* header */
+.topbar{
+    z-index: 10;
+    position: fixed;
+    width: 100.7%;
+    height: 10vh;
+    background-color:rgb(65, 74, 78);
+}
+
+.main-nav-link{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50px;
+}
+
+.main-nav-link li{
+    font-family: 'Rasa', serif;
+    list-style: none;
+}
+
+.main-nav-link li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;   
+    margin: 4px;
+    letter-spacing: 2px;
+}
+
+.main-nav-link button{
+   border: none;
+   font-size: 18px;
+   font-family: 'Rasa', serif;
+   width: 110px;
+   height: 6vh;
+   border-radius: 14px;
+   position: relative;
+   left:900px;
+}
+
+
+
+/* ========================================================================================= */
+
+
+.bookingSection{
+   width: 100vw;
+   top: 62px;
+   height: 91%;
+   position: absolute;
+}
+
+.sectionOne{
+    border-top: 1px solid red;
+    width: 33%;
+    position: absolute;
+    height: 91vh;
+}
+
+.date{
+    position: relative;
+    top: 100px;
+    left: 10px;
+}
+
+.time{
+    position: relative;
+    top: 43.8px;
+    width: 160px;
+    left: 300px;
+}
+
+.driverComboBox{
+    position: relative;
+    top: 100px;
+    left: 10px;
+}
+
+.TextField{
+    position: relative;
+    top: 45px;
+    left: 300px;
+    width: 160px;
+}
+.searchButton{
+    position: relative;
+    top: 140px;
+    left: 10px;
+    width: 30vw;
+    height: 6vh;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background-color: #D5FB91;
+}
+
+.bookingbtn{
+    position: relative;
+    top: 160px;
+    left: 10px;
+    width: 30vw;
+    height: 6vh;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    background-color: #D5FB91;
+}
+
+.sectionTwo{
+    border: 1px solid rgb(0, 98, 15);
+    width: 67%;
+    right: 0;
+    height: 91vh;
+    position: absolute;
+}
+
+.upload_Sip_note{
+  display:flex;
+  text-align: center;
+  position: relative;
+  top: 120px;
+  border: 1px solid rgb(255, 255, 255);
+  width: 280px;
+  color: red;
+  font-size: large;
+  right: 10px;
+}
+
+.firstSlider{
+  position: relative;
+  top:80px;
+  width: 100%;
+  height: 50%;
+  border: 1px solid rgb(81, 0, 255);
+}
+
+.line{
+    position: absolute;
+    width: 1px;
+    right: 300px;
+    background-color: rgb(0, 98, 15);
+    height: 300px;
+    top: 10px;
+}
+
+.secondSlider{
+  position: relative;
+  top:80px;
+  width: 100%;
+  height: 38%;
+  border: 1px solid rgb(255, 4, 205);
+}
+
+.lossDamage{
+    position: absolute;
+    right: 0;
+  
+}
+
+.losDamageTextField{
+    position: relative;
+    top: 160px;
+    width: 200px;
+    left: 30px;
+}
+
+
+.txtOrderId{
+    position: absolute;
+    left:15px;
+    top: 30px;
+}
+
+.txtPaymentId{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+
+
+/* ================================================================= */
+
+.btnAddtoCart{
+    position: absolute;
+    border: none;
+    bottom: 30px;
+    right: 320px;
+    width: 180px;
+    background-color: aqua;
+    height: 40px;
+}

@@ -1,0 +1,115 @@
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+/* header */
+.proflie_topbar{
+    z-index: 10;
+    position: fixed;
+    width: 100.7%;
+    height: 10vh;
+    background-color:rgb(65, 74, 78);
+}
+
+.proflie_main-nav-link{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    position: absolute;
+    left: 50px;
+}
+
+.proflie_main-nav-link{
+    
+    font-family: 'Rasa', serif;
+    list-style: none;
+}
+
+.proflie_main-nav-link li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 22px;   
+    margin: 50px;
+    letter-spacing: 2px;
+}
+
+.proflie_main-nav-link button{
+   border: none;
+   font-size: 18px;
+   font-family: 'Rasa', serif;
+   width: 110px;
+   height: 5vh;
+   border-radius: 6px;
+   position: relative;
+   left:900px;
+}
+
+
+/* ==================================================================*********========================== */
+
+.coverImg{
+   position: absolute;
+   border: 2px solid red;
+   width: 100vw;
+   top:72px;
+   height: 30%;
+}
+
+.profileSection{
+    border: 2px solid rgb(85, 0, 134);
+    position: absolute;
+    width: 100vw;
+    top: 288px;
+    left: 0;
+    height: 60%;
+}
+
+.profileSideSection{
+   border: 2px solid greenyellow;
+   position: absolute;
+   right: 0;
+   width: 70vw;
+   height: 100%;
+}
+
+
+/* =============================================================================================================== */
+
+.textFiled-First-Section{
+    display: flex;
+    margin: 30px;
+}
+
+.textFiled-Second-Section{
+    display: flex;
+    margin: 30px;
+}
+
+.saveandupdateBTN{
+    position: absolute;
+    right: 40%;
+    top: 41%;
+    width: 15vw;
+    height: 5vh;
+}

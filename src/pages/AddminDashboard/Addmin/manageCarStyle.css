@@ -1,0 +1,80 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.fristDiv{
+ 
+  height: 38vh;
+}
+
+.secondDiv{
+    height: 44vh;
+    position: relative;
+    top: 20px;
+}
+
+.textFildSection{
+    position: absolute;
+    width: 68vw;
+    height: 38vh;
+}
+
+.textFildSectionTwo{
+    position: absolute;
+   
+    width: 13vw;
+    height: 38vh;
+    right: 25px;
+    display: inline;
+}
+
+
+.savebtn{
+    display: block;
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    background-color: rgb(66, 69, 255);
+    color: white;
+    position: relative;
+    top: 60px;
+    margin: auto;
+    border: none;
+}
+
+.updatebtn{
+    display: block;
+    width: 60%;
+    height: 15%;
+    background-color: rgb(0, 162, 11);
+    color: white;
+    margin: auto;
+    position: relative;
+    border: none;
+    top: 80px;
+}
+
+.deleteBtn{
+    display: block;
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    position: relative;
+    border: none;
+    background-color: red;
+    color: white;
+    top: 100px;
+}
+
+.firstflied{
+    display: flex;
+    margin: 10px;
+    position: relative;
+    top: 20px;
+}

@@ -1,0 +1,89 @@
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.CustomerfristDiv{
+   position: relative;
+   height: 35vh;
+
+   width: 100%;
+   border: 1px solid rgba(0, 89, 255, 0.423);
+   
+}
+
+.CustomertextFildSection{
+    position: relative;
+    border:5px solid rgba(255, 0, 111, 0.423);
+    width: 100%;
+    height: 35vh;
+}
+
+
+
+.secondDiv{
+    height: 44vh;
+    position: relative;
+    top: 20px;
+}
+
+.CustextFildSectionTwo{
+    position: absolute;
+    width: 13vw;
+    height: 38vh;
+    right: 25px;
+    display: inline;
+    top:-20px;
+}
+
+
+.savebtn{
+    display: block;
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    /* background-color: rgb(66, 69, 255); */
+    color: white;
+    position: relative;
+    top: 60px;
+    margin: auto;
+    border: none;
+}
+
+.updatebtn{
+    display: block;
+    width: 60%;
+    height: 15%;
+    background-color: rgb(0, 162, 11);
+    color: white;
+    margin: auto;
+    position: relative;
+    border: none;
+    top: 80px;
+}
+
+.deleteBtn{
+    display: block;
+    width: 60%;
+    height: 15%;
+    margin: auto;
+    position: relative;
+    border: none;
+    background-color: red;
+    color: white;
+    top: 100px;
+}
+
+.Cusfirstflied{
+    display: flex;
+    margin: 10px;
+    position: relative;
+    top: 20px;
+}
+
