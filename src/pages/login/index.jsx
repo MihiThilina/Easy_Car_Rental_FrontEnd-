@@ -1,13 +1,12 @@
-
 import Box from '@mui/material/Box';
 import FormControl, { useFormControl } from '@mui/material/FormControl';
-import InputLabel from '@mui/material/InputLabel';
 import FormHelperText from '@mui/material/FormHelperText';
+import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import * as React from 'react';
 import { Link } from 'react-router-dom';
-import './style.css';
 
+import './style.css';
 
 function MyFormHelperText() {
     const { focused } = useFormControl() || {};
@@ -63,7 +62,7 @@ export default function  LoginPage(){
                
 
                  <div class="vertical-center">
-                     <button><Link to="/Booking">Login</Link> </button>
+                     <button><Link to="/AddminDashBoard">Login</Link> </button>
                      <p>Don't have an account ?<a href=""><Link to="/CreateAccountPage">Sign up</Link></a></p>
                  </div>
 

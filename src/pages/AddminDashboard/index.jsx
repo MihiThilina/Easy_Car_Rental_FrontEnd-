@@ -16,13 +16,9 @@ import Typography from '@mui/material/Typography';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Route, Routes } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
-import Home from "./Addmin/Home";
-import ManageCar from "./Addmin/manageCar";
-import ManageCustomer from "./Addmin/manageCustomer";
-import ManageDriver from "./Addmin/manageDriver";
-import ManageRentalRates from "./Addmin/manageRentalRates";
+
 
 import './AddminStyle.css'
 
@@ -42,13 +38,13 @@ export default function AddminDashBoard(props){
   }
 
   const listItemData = [
-    {label: "Home", link: "/", icon:<InboxIcon />},
-    {label: "Manage Car", link: "/ManageCar", icon:<InboxIcon />},
-    {label: "Manage Customer", link: "/manageCustomer", icon:<InboxIcon />},
-    {label: "Manage Driver", link: "/ManageDriver", icon:<InboxIcon />},
-    {label: "Manage Booking", link: "/", icon:<InboxIcon />},
-    {label: "Booking Details", link: "/", icon:<InboxIcon />},
-    {label: "Rental Rate", link: "/ManageRentalRates", icon:<InboxIcon />}
+    // {label: "Home", to: "/", icon:<InboxIcon />},
+    {label: "Manage Car", to: "manageCar", icon:<InboxIcon />},
+    {label: "Manage Customer", to: "manageCustomer", icon:<InboxIcon />},
+    {label: "Manage Driver", to: "manageDriver", icon:<InboxIcon />},
+    {label: "Manage Booking", to: "/#", icon:<InboxIcon />},
+    {label: "Booking Details", to: "/#", icon:<InboxIcon />},
+    {label: "Rental Rate", to: "manageRentalRates", icon:<InboxIcon />}
    ]
   
 
@@ -58,12 +54,10 @@ export default function AddminDashBoard(props){
       <Divider />
       <List>
       {listItemData.map((item, i) => (
-            
             <Button size="small"  onClick={() => handleDrawerClose()}>
                  <ListItem
-                exact
-                component={NavLink}
-                to={item.link}
+                component={Link}
+                to={item.to}
                 key={i}
                 >
                 <ListItemIcon>{item.icon}</ListItemIcon>
@@ -136,31 +130,14 @@ export default function AddminDashBoard(props){
               
             </Box>
             <Box
-              
               component="main"
               sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
               <Toolbar />
-                  
-                   {/* <Routes>
-                    <Route exact path="/" element={<Home/>}/>
-                    <Route exact path="/ManageCar" element={<ManageCar/>}/>
-                    <Route exact path="/manageDriver" element={<ManageDriver/>}/>
-                    <Route exact path="/manageCustomer" element={<ManageCustomer/>}/>
-                    <Route exact path="/ManageRentalRates" element={<ManageRentalRates/>}/>                    
-                   </Routes> */}
-       
+              <Outlet/>
             </Box>
           </Box>
           
         );
-        
 
-        AddminDashBoard.propTypes = {
-            /**
-             * Injected by the documentation to work in an iframe.
-             * You won't need it on your project.
-             */
-            window: PropTypes.func,
-          };
 }
