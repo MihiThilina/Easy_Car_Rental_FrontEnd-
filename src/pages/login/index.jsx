@@ -4,12 +4,13 @@ import FormHelperText from '@mui/material/FormHelperText';
 import InputLabel from '@mui/material/InputLabel';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import { Component } from 'react';
-
-import user from "../../service/user"
 import { Link } from 'react-router-dom';
 
-import './style.css';
+import loginBackground from '../../assest/img/loginBackground.jpg';
+import mercedes_PNG1903 from '../../assest/img/mercedes_PNG1903.png';
+import user from "../../service/user";
 
+import './style.css';
 
 class LoginPage extends Component {
 
@@ -39,11 +40,11 @@ class LoginPage extends Component {
 
 
   submitLLogin = async () => {
-    let formData = this.state.FormData;
-    let res = await user.PutUser(formData);
-    if(res.data.message == 'Customer'){
-      this.path ='CustomerProflie';
-    }
+    // let formData = this.state.FormData;
+    // let res = await user.PutUser(formData);
+    // if(res.data.message == 'Customer'){
+    //   this.path ='CustomerProflie';
+    // }
   }
 
 
@@ -57,7 +58,8 @@ class LoginPage extends Component {
 
           <section class="login_Page">
             <div class="first_slider">
-
+            <img class='balckground' src={loginBackground} />
+            <img class='balckground' style={{width:'600px',position:'relative',top:'50px'}} src={mercedes_PNG1903} />
             </div>
             <div class="second-slider">
               <h1>Sign in</h1>
@@ -106,9 +108,9 @@ class LoginPage extends Component {
 
 
               <div class="vertical-center">
-                <button onClick={this.submitLLogin}
+                <button 
                    
-                > <Link to='path'></Link>  Login </button>
+                > <Link to='/AddminDashBoard'>Login</Link>   </button>
                 <p>Don't have an account ?<a href=""><Link to="/CreateAccountPage">Sign up</Link></a></p>
               </div>
 

@@ -70,20 +70,20 @@ export default function AddminDashBoard(props){
             <Box sx={{ display: 'flex' }} >
             <CssBaseline />
             <AppBar
-              
+              id="appBar"
               position="fixed"
               sx={{
                 width: { sm: `calc(100% - ${drawerWidth}px)` },
                 ml: { sm: `${drawerWidth}px` },
               }}
             >
-              <Toolbar style={{ border:"1px solid red"}}>
+              <Toolbar  style={{ border:"1px solid red"}}>
                 <IconButton
                   aria-label="open drawer"
                   onClick={handleDrawerToggle}
                   sx={{ mr: 2, display: { sm: 'none' } }}
                 >
-                  <MenuIcon />
+                  <MenuIcon  />
                 </IconButton>
                 <Typography variant="h6" noWrap component="div">
                   Addmin DashBoard
@@ -98,6 +98,7 @@ export default function AddminDashBoard(props){
             >
               {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
               <Drawer
+              
                 container={container}
                 variant="temporary"
                 open={mobileOpen}

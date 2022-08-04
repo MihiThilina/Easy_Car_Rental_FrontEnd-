@@ -1,2 +1,12 @@
 
 
+#appBar{
+    background-color: rgb(138, 137, 137);
+    border: 1px solid rgb(116, 115, 115);
+}
+
+#toolBar{
+    background-color: #ff5f00;
+    color:white;
+   
+}
