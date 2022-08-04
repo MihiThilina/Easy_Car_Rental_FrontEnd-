@@ -1,25 +1,24 @@
 import MenuIcon from '@mui/icons-material/Menu';
+import { CardActionArea } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import IconButton from '@mui/material/IconButton';
 import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 import { withStyles } from "@mui/styles";
 import * as React from 'react';
 import { Component } from "react";
 import Carousel from "react-elastic-carousel";
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-import mainImg from '../../assest/img/mercedes_PNG1903.png';
-import carImg from '../../assest/img/toyota.png';
+import { Link } from 'react-router-dom';
 
 import as001 from '../../assest/img/as001.jpg';
 import as002 from '../../assest/img/as002.jpg';
 import as003 from '../../assest/img/as003.jpg';
-import { Link } from 'react-router-dom';
-
+import mainImg from '../../assest/img/mercedes_PNG1903.png';
+import carImg from '../../assest/img/toyota.png';
 import Item from "./Item";
 import { styleSheet } from "./style";
 
@@ -264,7 +263,7 @@ class HomePage extends Component{
 
                     <section class="contact_section">
                               <img src="" alt="" />
-                              <h1>Call Today For Booking Your Next Ride <img src="data:image/png;base64,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" alt="" />  (800) 650 743 Operators available 24/7 </h1>
+                            
                     </section>
 
                 </main>

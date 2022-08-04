@@ -1,11 +1,9 @@
-
 import axios from "../axios";
-
 
 class Driver{
              
     postDriver = async (data) => {
-        //   console.log(data);
+          console.log(data);
         const promise = new Promise((resolve, reject) => {
             axios.post('driver', data)   
                 .then((res) => {
@@ -17,7 +15,7 @@ class Driver{
         });
 
         return await promise;
-        };
+     };
 
         GetDriver = async () => {
             const promise = new Promise((resolve, reject) => {

@@ -1,6 +1,7 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 import IconButton from '@mui/material/IconButton';
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -140,6 +141,10 @@ class ManageCustomer extends Component {
                                         }}
                                     ><EditIcon color='primary'/></IconButton>
                                     </Tooltip>
+
+                                    <Tooltip title="Show">
+                              <IconButton><RemoveRedEyeIcon color="green" /></IconButton>
+                            </Tooltip>
 
                   </TableCell>
 

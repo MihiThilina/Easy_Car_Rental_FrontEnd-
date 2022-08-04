@@ -1,6 +1,7 @@
-
-import React, { Component } from 'react';
-import './rentalRates.css'
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
+import Box from '@mui/material/Box';
+import IconButton from '@mui/material/IconButton';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -9,16 +10,14 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import DeleteIcon from '@mui/icons-material/Delete';
 import Tooltip from '@mui/material/Tooltip';
-import EditIcon from '@mui/icons-material/Edit';
-import IconButton from '@mui/material/IconButton';
+import React, { Component } from 'react';
 import { TextValidator, ValidatorForm } from "react-material-ui-form-validator";
 
 import RentalRatesService from "../../../service/RentalRatesService"
 
+import './rentalRates.css'
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -102,7 +101,6 @@ class ManageRentalRates extends Component {
 
   submitRentalRates = async () => {
     let formData = this.state.formData;
-
         if(this.state.btnLabelSave === "save") {
             let res = await RentalRatesService.postRentalRatesService(formData);
             console.log(res)    //print the promise
@@ -213,7 +211,7 @@ class ManageRentalRates extends Component {
                                   formData.rental_ratesID = e.target.value
                                   this.setState({ formData })
                               }}
-                              validators={['required']}
+                          
                       />
                       </Box>
                     

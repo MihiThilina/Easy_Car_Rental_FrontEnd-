@@ -18,8 +18,6 @@ import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import { Link, Outlet } from "react-router-dom";
 
-
-
 import './AddminStyle.css'
 
 const drawerWidth = 240;
@@ -33,17 +31,14 @@ export default function AddminDashBoard(props){
     setMobileOpen(!mobileOpen);
   };
 
-  const handleDrawerClose =() =>{
-    
-  }
 
-  const listItemData = [
+  const  listItemData = [
     // {label: "Home", to: "/", icon:<InboxIcon />},
     {label: "Manage Car", to: "manageCar", icon:<InboxIcon />},
     {label: "Manage Customer", to: "manageCustomer", icon:<InboxIcon />},
     {label: "Manage Driver", to: "manageDriver", icon:<InboxIcon />},
-    {label: "Manage Booking", to: "/#", icon:<InboxIcon />},
-    {label: "Booking Details", to: "/#", icon:<InboxIcon />},
+    {label: "Manage Booking", to: "ManageBooking", icon:<InboxIcon />},
+    {label: "Booking Details", to: "BookingDetails", icon:<InboxIcon />},
     {label: "Rental Rate", to: "manageRentalRates", icon:<InboxIcon />}
    ]
   
@@ -54,7 +49,7 @@ export default function AddminDashBoard(props){
       <Divider />
       <List>
       {listItemData.map((item, i) => (
-            <Button size="small"  onClick={() => handleDrawerClose()}>
+            <Button size="small">
                  <ListItem
                 component={Link}
                 to={item.to}
