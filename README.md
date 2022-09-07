@@ -10,7 +10,7 @@ Install dependencies
 npm install
 ```
 
-Run the Tailwind CLI to compile the **input.css** during development. The output file is **css/main.css**
+Run the output**
 
 ```
 npm run watch
